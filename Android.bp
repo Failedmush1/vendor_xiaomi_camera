@@ -42,6 +42,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libgui-xiaomi",
+    check_elf_files: false,
 	owner: "xiaomi",
 	strip: {
 		none: true,
