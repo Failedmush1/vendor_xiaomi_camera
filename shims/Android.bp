@@ -9,8 +9,10 @@ cc_library_shared {
     srcs: ["libgui_shim_miuicamera.cpp"],
     shared_libs: [
         "libgui",
+        "libui",
         "libutils",
         "libsensor",
         "libcamera_client",
+        "libnativewindow",
     ],
 }
