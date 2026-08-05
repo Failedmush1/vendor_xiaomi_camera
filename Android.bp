@@ -65,7 +65,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system/lib64/libmicampostproc_client.so"],
-			shared_libs: ["liblog", "libutils", "libcutils", "libhardware", "libnativewindow", "libEGL", "libGLESv2", "libfmq", "libgui", "libui", "libcamera_client", "libcamera_metadata", "libmedia_jni_utils", "libnativehelper", "libhidlbase", "libhidltransport", "vendor.xiaomi.hardware.campostproc@1.0-system", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libgui_shim_miuicamera", "liblog", "libutils", "libcutils", "libhardware", "libnativewindow", "libEGL", "libGLESv2", "libfmq", "libgui", "libui", "libcamera_client", "libcamera_metadata", "libmedia_jni_utils", "libnativehelper", "libhidlbase", "libhidltransport", "vendor.xiaomi.hardware.campostproc@1.0-system", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
