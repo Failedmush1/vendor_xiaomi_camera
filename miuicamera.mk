@@ -13,8 +13,8 @@ PRODUCT_PACKAGES += \
     libmibokeh_mask_dsp
 
 # Dex
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    MiuiCamera
+# PRODUCT_DEXPREOPT_SPEED_APPS += \
+#    MiuiCamera
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -28,7 +28,9 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.com.google.lens.oem_camera_package=com.android.camera \
     ro.product.mod_device=renoir_global \
     ro.miui.notch=1 \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.aperture,org.lineageos.aperture.dev
+    ro.miui.ui.version.name=V15 \
+    ro.miui.ui.version.code=15 \
+    vendor.camera.aux.packagelist=com.android.camera
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += \

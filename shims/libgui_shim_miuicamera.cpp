@@ -19,6 +19,23 @@ void _ZN7android18BnProducerListener16onBufferDetachedEi(int slot) {
    (void)slot;
 }
 
+void _ZN7android18BnProducerListener18onBuffersDiscardedERKNSt3__16vectorIiNS1_9allocatorIiEEEE(void* thisptr, void* vectors) {
+    // no-op
+}
+
+bool _ZN7android18BnProducerListener18needsReleaseNotifyEv(void* thisptr) {
+    return false;
+}
+
+#include <binder/Parcel.h>
+status_t _ZN7android18BnProducerListener10onTransactEjRKNS_6ParcelEPS1_j(void* thisptr, uint32_t code, const Parcel& data, Parcel* reply, uint32_t flags) {
+    return static_cast<BBinder*>(thisptr)->transact(code, data, reply, flags);
+}
+
+status_t _ZThn16_N7android18BnProducerListener10onTransactEjRKNS_6ParcelEPS1_j(void* thisptr, uint32_t code, const Parcel& data, Parcel* reply, uint32_t flags) {
+    return static_cast<BBinder*>(thisptr)->transact(code, data, reply, flags);
+}
+
 extern void* _ZN7android7SurfaceC1ERKNS_2spINS_22IGraphicBufferProducerEEEbRKNS1_INS_7IBinderEEE(
         void* thisptr, const sp<IGraphicBufferProducer>& bufferProducer, bool controlledByApp,
         const sp<IBinder>& surfaceControlHandle);
