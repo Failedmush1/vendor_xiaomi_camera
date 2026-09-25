@@ -24,7 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/camera/configs/public.libraries-xiaomi.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-xiaomi.txt
 
 # Camera
-$(call soong_config_set,camera,override_format_from_reserved,true)
+$(call soong_config_set_bool,camera,override_format_from_reserved,true)
 
 # Properties
 PRODUCT_SYSTEM_PROPERTIES += \
