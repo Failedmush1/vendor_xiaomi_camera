@@ -6,11 +6,7 @@
 
 # Overlays
 PRODUCT_PACKAGES += \
-    MiuiCameraOverlay \
-    libcamera_scene \
-    libmialgo_ie_preview \
-    libmibokeh_845_video \
-    libmibokeh_mask_dsp
+    MiuiCameraOverlay
 
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
